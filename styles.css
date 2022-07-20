@@ -1,0 +1,386 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;  
+}
+
+*:focus {
+    outline: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+  
+::-webkit-scrollbar {
+    width: 20px;
+}
+    
+::-webkit-scrollbar {
+    background: none !important;
+}
+    
+::-webkit-scrollbar-thumb {
+    background-color:#161616;
+    border: 6px solid transparent;
+    background-clip: content-box;
+}
+
+/*Defaults*/
+
+body {
+    font-family: 'inter', sans-serif;
+    margin: 0;
+    color: #161616;
+}
+
+/* unvisited link */
+a:link {
+    text-decoration:none;
+    color: #161616;
+}
+
+/* visited link */
+a:visited {
+    text-decoration:none;
+    color: #161616;
+}
+
+.a:hover {
+    font-weight: bold;
+}
+
+/* mouse over link */
+a:hover {
+    text-decoration:none;
+}
+
+/* selected link */
+a:active {
+    text-decoration:none;
+    color: #161616;
+}
+
+/*HEADER*/
+
+
+.rainbow-hover {
+    font-size: xx-large;
+    font-weight: bold;
+    background: linear-gradient(60deg, #E3FFB6,rgb(197, 233, 255),#ECC3FF, rgb(255, 196, 223));
+    background-size: 200% 200%;
+    animation: rainbow 2s ease-in-out infinite;
+    background-clip: text;
+    -webkit-background-clip:text;
+    color:rgba(0,0,0,1);
+    transition: color .2s ease-in-out;
+}
+
+
+.rainbow-hover a:hover {
+    color:rgba(0,0,0,0);
+    cursor: url(images/macaron-30.png), auto;
+}
+
+@keyframes rainbow { 
+  0%{background-position:up}
+  50%{background-position:right}
+  100%{background-position:left}
+}
+
+/* NAVIGATION*/
+.navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 25px auto;
+}
+
+.navigation img {
+    width: 150px;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 15px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 25px;
+}
+    
+nav ul li a {
+    text-decoration: none;
+    color: #161616;
+    font-size: 16px;
+}
+    
+nav ul li a:hover{
+    font-weight: bold;
+    color: #ECC3FF;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+nav ul li a:active{
+    font-weight: bold;
+}
+
+/* HOME*/
+
+#rh-info {
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.home {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100vh;
+    padding: 50px;
+    margin: 0 auto;
+}
+
+.home p {
+    font-weight: 300;
+    font-size: 25px;
+    width: 550px;
+    margin-top: 20px;
+}
+
+.home img {
+    width: 350px;
+}
+
+.home-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+
+#home-1 {
+    font-size: large;
+    font-weight: bold;
+    margin-top: 30px;
+
+}
+
+#home-1 a:hover {
+    color: #ECC3FF;
+    text-decoration: none;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+/* #home-2 {
+    font-size: small;
+    font-style: italic;
+} */
+
+/* ABOUT*/
+
+.about {
+    display: flex;
+    flex-direction: row-reverse;
+    height: 100vh;
+    align-items: center;
+}
+
+.about p {
+    font-weight: 300;
+    font-size: 15px;
+    width: 550px;
+}
+
+.about img {
+    width: 400px;
+    margin: 55px;
+    
+}
+
+.about-info {
+    display: flex;
+    flex-direction: column;
+}
+
+/* PROJECTS*/
+
+.projects {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    
+}
+
+.project p {
+    font-weight: 300;
+    font-size: 15px;
+    width: 550px;
+}
+
+.projects img {
+    width: 500px;
+    margin: 25px 15px;
+}
+
+.project-grid-1{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 55px;
+}
+
+.project-grid-2{
+    display: flex;
+    flex-direction: column;
+    margin-top: 55px;
+}
+
+
+/* OTHER*/
+/* 
+.other {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    font-weight: bold;
+    font-size: 100px;
+} */
+
+
+/* CONTACT*/
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    width: 665px;
+    text-align: center;
+}
+.contact-socials {
+    display: flex;
+    justify-content: space-around;
+    margin: 25px;
+
+}
+
+.contact-socials img {
+    width: 40px;
+}
+
+.contact-form {
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+  textarea:focus, input:focus{
+    outline: none;
+}
+
+input[type=text] {
+    border: none;
+    border-bottom: 2px solid #161616;
+    font-family: inherit;
+    width: 100%;
+    padding: 25px 0px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    font-size: medium;
+    font-weight: bold;
+}
+
+input[type=email] {
+    border: none;
+    border-bottom: 2px solid #161616;
+    font-family: inherit;
+    width: 100%;
+    padding: 25px 0px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    font-size: medium;
+    font-weight: bold;
+}
+
+textarea {
+    border: none;
+    border-bottom: 2px solid #161616;
+    font-family: inherit;
+    font-size: medium;
+    font-weight: bold;
+    width: 100%;
+    padding: 25px 0px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+
+
+  input[type=submit] {
+    background-color: #161616;
+    color: white;
+    padding: 15px 25px;
+    border: none;
+    cursor: pointer;
+    float: right;
+    font-weight: bold;
+    font-size: medium;
+  }
+  
+  input[type=submit]:hover {
+    cursor: url(images/macaron-30.png), auto;
+    background-color:#ECC3FF;
+    font-weight: bold;
+    font-size: medium;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+  }
+  
+.contact-content {
+    margin: 25px;
+} 
+
+/* THANKS Page*/
+.thanks{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    text-align: center;
+}
+
+.thanks p{
+    font-size: x-large;
+    font-weight: lighter;
+}
+
+
+/* FOOTER*/
+.footer {
+    display: flex;
+    margin-bottom: 16px;
+    font-weight: bold;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    font-size: x-small;
+}
+
+.footer a:hover {
+    color: #ECC3FF;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+}
