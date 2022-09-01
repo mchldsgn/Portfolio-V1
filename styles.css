@@ -110,7 +110,8 @@ a:active {
     justify-content: space-between;
     padding-top: 15px;
     top: 0;
-    width: 50%;
+    position: fixed;
+    width: 55%;
     background-color: white;
 }
 
@@ -150,7 +151,7 @@ nav ul li a:active{
 
 /*HOME Rainbow Hover*/
 .rainbow-hover {
-    font-size: 55px;
+    font-size: 50px;
     font-weight: bold;
     background: linear-gradient(60deg, #E3FFB6,rgb(197, 233, 255),#ECC3FF, rgb(255, 196, 223));
     background-size: 200% 200%;
@@ -390,7 +391,7 @@ textarea {
 } 
 
 /* THANKS Page*/
-.thanks{
+.thanks-msg{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -399,11 +400,35 @@ textarea {
     text-align: center;
 }
 
-.thanks p{
+.thanks-msg p{
     font-size: x-large;
     font-weight: lighter;
 }
 
+.rainbow-hover-3 {
+    font-size: 25px;
+    
+    background: linear-gradient(60deg, #E3FFB6,rgb(197, 233, 255),#ECC3FF, rgb(255, 196, 223));
+    background-size: 200% 200%;
+    animation: rainbow 2s ease-in-out infinite;
+    background-clip: text;
+    -webkit-background-clip:text;
+    color:rgba(0,0,0,1);
+    transition: color .2s ease-in-out;
+}
+
+
+.rainbow-hover-3 a:hover {
+    color:rgba(0,0,0,0);
+    font-weight: bold;
+    cursor: pointer, auto;
+}
+
+@keyframes rainbow { 
+  0%{background-position:up}
+  50%{background-position:right}
+  100%{background-position:left}
+}
 
 /* FOOTER*/
 .footer {
