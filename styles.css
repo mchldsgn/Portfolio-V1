@@ -65,9 +65,9 @@ a:active {
 
 /*HEADER*/
 
-
-.rainbow-hover {
-    font-size: xx-large;
+/*HEADER Rainbow Hover*/
+.rainbow-hover-1{
+    font-size: 30px;
     font-weight: bold;
     background: linear-gradient(60deg, #E3FFB6,rgb(197, 233, 255),#ECC3FF, rgb(255, 196, 223));
     background-size: 200% 200%;
@@ -79,7 +79,7 @@ a:active {
 }
 
 
-.rainbow-hover a:hover {
+.rainbow-hover-1 a:hover {
     color:rgba(0,0,0,0);
     cursor: url(images/macaron-30.png), auto;
 }
@@ -89,6 +89,7 @@ a:active {
   50%{background-position:right}
   100%{background-position:left}
 }
+
 
 /* NAVIGATION*/
 .navigation {
@@ -104,12 +105,12 @@ a:active {
 
 .navbar {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    justify-content: space-between;
     padding-top: 15px;
-    position: fixed;
     top: 0;
-    width: 100%;
+    width: 50%;
     background-color: white;
 }
 
@@ -147,18 +148,48 @@ nav ul li a:active{
 
 /* HOME*/
 
-#rh-info {
-    font-size: xx-large;
+/*HOME Rainbow Hover*/
+.rainbow-hover {
+    font-size: 55px;
     font-weight: bold;
+    background: linear-gradient(60deg, #E3FFB6,rgb(197, 233, 255),#ECC3FF, rgb(255, 196, 223));
+    background-size: 200% 200%;
+    animation: rainbow 2s ease-in-out infinite;
+    background-clip: text;
+    -webkit-background-clip:text;
+    color:rgba(0,0,0,1);
+    transition: color .2s ease-in-out;
 }
+
+
+.rainbow-hover a:hover {
+    color:rgba(0,0,0,0);
+    cursor: url(images/macaron-30.png), auto;
+}
+
+@keyframes rainbow { 
+  0%{background-position:up}
+  50%{background-position:right}
+  100%{background-position:left}
+}
+
+#rh-info {
+    font-size: 40px;
+    font-weight: 16px;
+    text-align: center;
+}
+
+/* .rh-info-2 {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 25px;
+} */
 
 .home {
     display: flex;
     flex-direction: row;
     align-items: center;
     height: 100vh;
-    padding: 50px;
-    margin: 0 auto;
 }
 
 .home p {
@@ -176,26 +207,42 @@ nav ul li a:active{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-align: center;
     width: 100%;
 }
 
-
-#home-1 {
-    font-size: large;
-    font-weight: bold;
-    margin-top: 30px;
-
+#socials {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin: 50px;
 }
 
-#home-1 a:hover {
+.fa-brands {
+    color: #161616;
+    font-size: 40px;
+}
+
+.fa-brands:hover {
     color: #ECC3FF;
-    text-decoration: none;
-    -webkit-transition: all 1s ease;
-    transition: all 1s ease;
+    font-size: 40px;
+    transition: color .2s ease-in-out;
+}
+
+.fa-solid {
+    color: #161616;
+    font-size: 35px;
+}
+
+.fa-solid:hover {
+    color: #ECC3FF;
+    font-size: 35px;
+    transition: color .2s ease-in-out;
 }
 
 /* ABOUT*/
-
+/* 
 .about {
     display: flex;
     flex-direction: row-reverse;
@@ -210,16 +257,10 @@ nav ul li a:active{
     width: 550px;
 }
 
-.about img {
-    width: 400px;
-    margin: 55px;
-    
-}
-
 .about-info {
     display: flex;
     flex-direction: column;
-}
+} */
 
 /* PROJECTS*/
 
@@ -253,17 +294,6 @@ nav ul li a:active{
     flex-direction: column;
     margin-top: 55px;
 }
-
-
-/* OTHER*/
-/* 
-.other {
-    display: flex;
-    height: 100vh;
-    align-items: center;
-    font-weight: bold;
-    font-size: 100px;
-} */
 
 
 /* CONTACT*/
