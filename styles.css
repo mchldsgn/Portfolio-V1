@@ -116,11 +116,11 @@ a:active {
 }
 
 
-.dark-mode {
+/* .dark-mode {
     background-color: black;
     color: white;
-  }
-  
+  } */
+
 /* @media screen and (max-width: 500px) {
     .navbar {
       float: none;
