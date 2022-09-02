@@ -67,7 +67,7 @@ a:active {
 
 /*HEADER Rainbow Hover*/
 .rainbow-hover-1{
-    font-size: 30px;
+    font-size: 25px;
     font-weight: bold;
     background: linear-gradient(60deg, #E3FFB6,rgb(197, 233, 255),#ECC3FF, rgb(255, 196, 223));
     background-size: 200% 200%;
@@ -111,7 +111,7 @@ a:active {
     padding-top: 15px;
     top: 0;
     position: fixed;
-    width: 85%;
+    width: 84%;
     background-color: white;
 }
 
@@ -151,7 +151,7 @@ nav ul li a:active{
 
 /*HOME Rainbow Hover*/
 .rainbow-hover {
-    font-size: 50px;
+    font-size: 35px;
     font-weight: bold;
     background: linear-gradient(60deg, #E3FFB6,rgb(197, 233, 255),#ECC3FF, rgb(255, 196, 223));
     background-size: 200% 200%;
@@ -184,14 +184,13 @@ nav ul li a:active{
     display: flex;
     flex-direction: row;
     align-items: center;
-    height: 100vh;
-    margin-top: 55px;
+    height: 40vh;
+    margin: 55px;
 }
 
 .home p {
     font-weight: 300;
     font-size: 25px;
-
     margin-top: 20px;
 }
 
@@ -204,7 +203,6 @@ nav ul li a:active{
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    width: 100%;
 }
 
 #socials {
@@ -212,7 +210,7 @@ nav ul li a:active{
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    margin: 50px;
+    margin: 35px;
 }
 
 .fa-brands {
@@ -238,13 +236,13 @@ nav ul li a:active{
 }
 
 /* ABOUT*/
-/* 
-.about {
+
+/* .about {
     display: flex;
     flex-direction: row-reverse;
-    height: 100vh;
     align-items: center;
     padding: 50px;
+    height: 85vh;
 }
 
 .about p {
@@ -255,7 +253,7 @@ nav ul li a:active{
 
 .about-info {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 } */
 
 /* PROJECTS*/
@@ -263,7 +261,7 @@ nav ul li a:active{
 .projects {
     display: flex;
     align-items: center;
-    height: 100vh;
+    height: 40vh;
 }
 
 .project p {
@@ -298,10 +296,6 @@ nav ul li a:active{
     justify-content: space-around;
     margin: 25px;
 
-}
-
-.contact-socials img {
-    width: 40px;
 }
 
 .contact-form {
