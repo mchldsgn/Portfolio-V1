@@ -15,3 +15,18 @@ function myFunction() {
     header.classList.remove("sticky");
   }
 }
+
+// Responsive navbar
+const burger = document.getElementById('burger');
+const ul = document.querySelector('nav ul');
+
+burger.addEventListener('click', () => {
+	burger.classList.toggle('show-x');
+	ul.classList.toggle('show');
+});
+
+// Dark mode
+function myFunction() {
+  var element = document.body;
+  element.classList.toggle("dark-mode");
+}

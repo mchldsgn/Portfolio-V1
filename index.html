@@ -36,35 +36,85 @@
             <!-- <li><a href="#about-section">about</a></li> -->
             <li><a href="#contact-section">contact</a></li>
           </ul>
+          <button id="burger" class="burger">
+		        <div class="bar"></div>
+		        <div class="bar"></div>
+	        </button>
         </nav>
   </div>
-
+  
+  <!-- <h2>Toggle Dark/Light Mode</h2>
+  <p>Click the button to toggle between dark and light mode for this page.</p>
+  <button onclick="myFunction()">Toggle dark mode</button> -->
 
 <!--HOME-->
 <div class="home" id="home-section">
   <div class="home-info">
     <span class="rainbow-hover">Hi, I’m
     <a href="https://youtu.be/ZxlxP2Bkbm4?t=20" target="_blank">Gaelle </a><img src="images/speaker.png" alt="speaker icon" style="width:16px;height:16px;"></span><br>
-    <span id="rh-info">front-end developer and designer,<br> based in the sunshine state🌴</span><br>(view some projects below)
+    <span id="rh-info">front-end developer and designer,<br> based in the sunshine state🌴☀️🌊</span><br>(view some projects below)
     <!-- <span class="rh-info-2">based in the sunshine state 🐶 doggy mama 📚 avid reader</span> -->
-
-
     
   </div>
 </div>
 
 
 <!--PROJECTS -->
-<div class="projects" id="project-section">
-  <div class="project-grid-1">
-    <a href="https://mchldsgn.github.io/GemTours--Miami/" target="_blank"><img src="images/gemtours-card.png" alt="GemTours (Miami) tour and travel card."></a>
-    <a href="https://vgmichel.github.io/poppi-landing-spw/index.html" target="_blank"><img src="images/poppi-card.png" alt="POPPI anime makeup brand card."></a>
-    <a href="https://www.figma.com/proto/34P4vG3BKTErtu8g5UJH7B/MOODISH?node-id=406%3A1579&scaling=scale-down&page-id=406%3A1577&starting-point-node-id=406%3A1579" target="_blank">
-    <img src="images/moodish-card.png" alt="moodish music sharing app card."></a>
+<div class="projects">
+  <div class="project-1">
+      <img src="images/gemtours-card.png" alt="GemTours (Miami) tour and travel card.">
+        <div class="project-overlay-1">
+          <div class="overlay-text-1">
+            <h2>Gemtours</h2>
+            <p>A homepage for a travel and tour agency</p>
+            <a href="https://mchldsgn.github.io/GemTours--Miami/" target="_blank " class="button-1"><i class="fa-solid fa-link"></i></i></a>
+            <a href="https://mchldsgn.github.io/GemTours--Miami/" target="_blank " class="button-1"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.figma.com/proto/BWxo9fEamA1u2LO1cXcvBa/Hometown-Homepage---GemTours---Miami?node-id=10310%3A2&starting-point-node-id=10310%3A2" target="_blank " class="button-1"><i class="fa-brands fa-figma"></i></a>
+          </div>
+        </div>
   </div>
 
+
+  <div class="project-2">
+  <img src="images/poppi-card.png" alt="POPPI anime makeup brand card.">
+    <div class="project-overlay-2">
+      <div class="overlay-text">
+        <h2>POPPI</h2>
+        <p>A landing page mockup for ecommerce site with branding assets.</p>
+        <a href="https://vgmichel.github.io/poppi-landing-spw/index.html" target="_blank " class="button-2"><i class="fa-solid fa-link"></i></i></a>
+        <a href="https://github.com/VGMichel/poppi-landing-spw" target="_blank " class="button-2"><i class="fa-brands fa-github"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="project-3">
+  <img src="images/moodish-card.png" alt="moodish music sharing app card.">
+    <div class="project-overlay-3">
+      <div class="overlay-text-3">
+        <h2>moodish</h2>
+        <p>A social music app/music sharing app that gives users the ability to connect with one another, while discovering new music and/or artists.</p>
+        <a href="https://www.figma.com/proto/34P4vG3BKTErtu8g5UJH7B/MOODISH?node-id=406%3A1579&scaling=scale-down&page-id=406%3A1577&starting-point-node-id=406%3A1579" target="_blank " class="button-3"><i class="fa-brands fa-figma"></i></a>
+      </div>
+    </div>
+  </div>
 </div>
 
+
+<!-- <div class="skills">
+  <h3>Le Skills</h3>
+  <ul>
+    <li>UI / UX</li>
+    <li>Front End Development</li>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+    <li>GitHub</li>
+    <li>API's</li>
+    <li>React</li>
+    <li>Adbobe Creative Suite</li>
+    <li>figma</li>
+  </ul>
+</div> -->
 
 <!--ABOUT --> 
 
@@ -95,10 +145,10 @@ Other than coding, I spend most of my free time reading, playing compter games �
   <div class="contact-form">
     <form action="https://formsubmit.co/gsmichel0@gmail.com" method="post" class="contact-content" autocomplete="off" target="_blank">
     <input type="hidden" name="_subject" value="New submission from mchldsgn!">
-    <input type="text" id="name" name="name" placeholder="NAME" required>
-    <input type="email" name="email" placeholder="E-MAIL" required>
+    <input type="text" id="name" name="name" placeholder="name" required>
+    <input type="email" name="email" placeholder="e-mail" required>
     <input type="hidden" name="_next" value="https://mchldsgn.github.io/mchldsgn/thanks.html">
-    <textarea name="subject" placeholder="MESSAGE" cols="30" rows="10" required></textarea>
+    <textarea name="subject" placeholder="message" cols="30" rows="10" required></textarea>
     <input type="submit" value="SEND"> 
     </form>
   </div>
@@ -106,7 +156,7 @@ Other than coding, I spend most of my free time reading, playing compter games �
 
   <!-- FOOTER -->
 <div class="footer">
-    <p>☀️🏝️🌊 <br> made by <a href="https://www.linkedin.com/in/gsmichel/" target="_blank">gaelle</a> in the <a href="https://worldpopulationreview.com/state-rankings/state-nicknames#:~:text=Florida&text=The%20Sunshine%20State%20is%20Florida's,and%20abundance%20of%20sunny%20weather." target="_blank">sunshine state.</a></p>
+    <p><img src="images/virgo-icon.png" alt="virgo icon" style="width:16px;height:16px;""><br> designed and developed by <a href="https://www.linkedin.com/in/gsmichel/" target="_blank">gaelle</a></p>
 </div>
 
   </body>
