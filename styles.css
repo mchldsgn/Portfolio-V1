@@ -332,23 +332,47 @@ ul li a:hover::after {
 .fa-brands {
     color: #161616;
     font-size: 40px;
+    font-size: 35px;
+    font-weight: bold;
+    background: linear-gradient(60deg, #E3FFB6,rgb(197, 233, 255),#ECC3FF, rgb(255, 196, 223));
+    background-size: 200% 200%;
+    animation: rainbow 2s ease-in-out infinite;
+    background-clip: text;
+    -webkit-background-clip:text;
+    color:rgba(0,0,0,1);
+    position: relative;
 }
 
 .fa-brands:hover {
-    color: #ECC3FF;
-    font-size: 40px;
     transition: color .2s ease-in-out;
+    color:rgba(0,0,0,0);
 }
 
 .fa-solid {
     color: #161616;
     font-size: 35px;
+    color: #161616;
+    font-size: 40px;
+    font-size: 35px;
+    font-weight: bold;
+    background: linear-gradient(60deg, #E3FFB6,rgb(197, 233, 255),#ECC3FF, rgb(255, 196, 223));
+    background-size: 200% 200%;
+    animation: rainbow 2s ease-in-out infinite;
+    background-clip: text;
+    -webkit-background-clip:text;
+    color:rgba(0,0,0,1);
+    position: relative;
 }
 
 .fa-solid:hover {
-    color: #ECC3FF;
-    font-size: 35px;
+    color:rgba(0,0,0,0);
     transition: color .2s ease-in-out;
+}
+
+@keyframes rainbow { 
+    0%{background-position:up}
+    50%{background-position:right}
+    100%{background-position:left}
 }
 
 /* ABOUT*/
