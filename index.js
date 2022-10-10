@@ -1,29 +1,36 @@
-// When the user scrolls the page, execute myFunction
-window.onscroll = function() {myFunction()};
+const hamburgerMenu = document.querySelector('#navigation .nav-icon');
+const navContent = document.querySelector('#nav-content');
+const closeNavButton = document.querySelector('#nav-content .close-btn');
+const navLinks = document.querySelectorAll('#nav-content nav ul li a');
+const scrollButton = document.querySelector(".scroll-top");
 
-// Get the header
-var header = document.getElementById("myHeader");
+// scroll TOP Button Events
 
-// Get the offset position of the navbar
-var sticky = header.offsetTop;
-
-// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
-function myFunction() {
-  if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
-  } else {
-    header.classList.remove("sticky");
-  }
+if(scrollButton){
+  window.addEventListener('scroll', ()=> {
+    if(pageYOffset > (window.innerHeight * 1.2)){
+      scrollButton.style.display="flex";
+    }else{
+      scrollButton.style.display="none";
+    }
+  });
+  scrollButton.addEventListener("click", () => {
+    window.scrollTo(0, 0);
+  });
 }
 
-// Responsive navbar
-const burger = document.getElementById('burger');
-const ul = document.querySelector('nav ul');
-
-burger.addEventListener('click', () => {
-	burger.classList.toggle('show-x');
-	ul.classList.toggle('show');
+// Hamburger Menu events
+hamburgerMenu.addEventListener('click', ()=>{
+  navContent.classList.add('show');
+  document.body.style.overflow="hidden";
 });
-
-// Dark mode
-
+closeNavButton.addEventListener('click', ()=>{
+  navContent.classList.remove('show');
+  document.body.style.overflow="initial";
+});
+navLinks.forEach( link => {
+  link.addEventListener('click', ()=> {
+    navContent.classList.remove('show');
+    document.body.style.overflow="initial";
+  })
+})

@@ -1,168 +1,293 @@
-<!--Designed and developed by Gaelle Michel. "mchldsgn" Version 1. NOT responsive -->
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Desgin focused, front-end developer.">
-    <meta name="author" content="Gaelle Michel">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>mchldsgn</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="styles.css">
 
-      <!-- Mobile -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Desgin focused, front-end developer.">
+  <title>Gaelle Michel Portfolio - design focused developer</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Favicon -->
+  <link rel="shortcurt icon" type="image/png" href="images/macaron-96.png" sizes="32x32" />
+  <link rel="shortcut icon" type="image/png" href="images/macaron-96.png" sizes="16x16" />
+  <link rel="stylesheet" href="styles.css">
+</head>
 
-     <!-- Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-
-      <!-- Favicon -->
-    <link rel="shortcurt icon" type="image/png" href="images/macaron-96.png" sizes="32x32" />
-    <link rel="shortcut icon" type="image/png" href="images/macaron-96.png" sizes="16x16" />
-
-
-  </head>
-
-  <body>
-    <!--NAVIGATION -->
-  <div class="navigation">
-      <div class="navbar">
-        <span class="rainbow-hover-1"><a href="#home-section">mchldsgn</a></span>
-        <nav>
-          <ul>
-            <li><a href="#home-section">projects</a></li>
-            <!-- <li><a href="#about-section">about</a></li> -->
-            <li><a href="#contact-section">contact</a></li>
-          </ul>
-          <button id="burger" class="burger">
-		        <div class="bar"></div>
-		        <div class="bar"></div>
-	        </button>
-        </nav>
+<body>
+  <!-- Scroll Top Button -->
+  <div class="scroll-top">
+    <i class="fa-solid fa-caret-up"></i>
   </div>
-  
 
-<!--HOME-->
-<div class="home" id="home-section">
-  <div class="home-info">
-    <span class="rainbow-hover">Hi, I’m
-    <a href="https://youtu.be/ZxlxP2Bkbm4?t=20" target="_blank">Gaelle <i class="fa-solid fa-volume-high"></i></a></span><br>
-    <span id="rh-info">front-end developer and designer,<br>based in the sunshine state 🌞</span>
-    <!-- <span class="rh-info-2">🌴sunshine state<br> 🐶doggy mama<br>📚 avid reader</span> --> <br>
-    <h3>view some projects below or connect with me!</h2>
- 
-    
+  <!-- Navigation -->
+  <section id="navigation">
+    <div class="nav-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </div>
+  </section>
+  <div id="nav-content">
+    <div class="close-btn">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+      </svg>
+    </div>
+    <div class="wrapper">
+      <h2 class="section-heading">Menu</h2>
+      <nav>
+        <ul>
+          <li><a data-text="Home" href="./index.html#hero">Home</a></li>
+          <li><a data-text="Projects" href="./index.html#projects">Projects</a></li>
+          <li><a data-text="About" href="./index.html#about">About</a></li>
+          <li><a data-text="Contact" href="./index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </div>
-</div>
 
+  <!-- Hero section -->
+  <section id="hero">
+    <div class="container">
+      <div class="left">
+        <p class="subheading">HELLO</p>
+        <h2 class="heading">
+          <div class="wrapper"><span>I'M GAELLE</span></div>
+        </h2>
+        <p class="desc"> multidisciplinary developer and designer </p>
+        <div class="buttons">
+          <a href="#projects" class="primary-btn-1">See my projects</a>
+          <a href="#about" class="primary-btn-2">Learn More</a>
+          <a href="#projects">
+            <i class="fa-solid fa-angle-down"></i>
+          </a>
+        </div>
+      </div>
+       <div class="right">
+        <img src="images/avi-macaron.jpg" alt="bitmoji with macarons"> 
+      </div> 
+    </div>
+  </section>
 
-<!--PROJECTS -->
-<div class="projects">
-  <div class="project-1">
-      <img src="images/gemtours-card.png" alt="GemTours (Miami) tour and travel card.">
-        <div class="project-overlay-1">
-          <div class="overlay-text-1">
-            <h2>Gemtours</h2>
-            <p>A homepage for a travel and tour agency</p>
-            <a href="https://mchldsgn.github.io/GemTours--Miami/" target="_blank " class="button-1"><i class="fa-solid fa-link"></i></i></a>
-            <a href="https://mchldsgn.github.io/GemTours--Miami/" target="_blank " class="button-1"><i class="fa-brands fa-github"></i></a>
-            <a href="https://www.figma.com/proto/BWxo9fEamA1u2LO1cXcvBa/Hometown-Homepage---GemTours---Miami?node-id=10310%3A2&starting-point-node-id=10310%3A2" target="_blank " class="button-1"><i class="fa-brands fa-figma"></i></a>
+  <!-- projects -->
+  <section id="projects">
+    <div class="container">
+      <h2 class="section-heading">Projects</h2>
+      <div class="all-items">
+        <div class="item">
+          <div class="left">
+            <div class="img">
+              <img src="images/moodish-cover-1.png" alt="">
+            </div>
+          </div>
+          <div class="right">
+            <h2 class="project-title">moodish</h2>
+            <h3 class="project-sub-title">social music app/music sharing app</h3>
+            <p class="project-desc">moodish is a mobile application that gives users the ability to connect others and to discover new music and/or artists.</p>
+            <div class="buttons">
+              <!-- <a href="#" class="primary-btn-1">More Info</a> -->
+              <a href="https://www.figma.com/proto/34P4vG3BKTErtu8g5UJH7B/MOODISH?node-id=425%3A1653&starting-point-node-id=406%3A1579" target="_blank" class="primary-btn outline external-link"> <span>View Prototype</span>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg>
+              </a>
+            </div>
+
           </div>
         </div>
-  </div>
+        <div class="item">
+          <div class="left">
+            <div class="img">
+              <img src="images/gemtours-card.png" alt="">
+            </div>
+          </div>
+          <div class="right">
+            <h2 class="project-title">Gem Tours
+            </h2>
+            <h3 class="project-sub-title">web page for a travel agency.
+            </h3>
+            <p class="project-desc">A Scrimba project where students were tasked to create a tour guide page for their hometown. I decided to create a fictional
+              tour and travel agency to showcase my homewtown of Miami.</p>
+            <div class="buttons">
+              <!-- <a href="#" class="primary-btn-1">More Info</a> -->
+              <a href="https://mchldsgn.github.io/GemTours--Miami/" target="_blank" class="primary-btn outline external-link"> <span>View Live</span>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="left">
+            <div class="img">
+              <img src="images/logo.jpg" alt="">
+            </div>
+          </div>
+          <div class="right">
+            <h2 class="project-title">POPPI</h2>
+            <h3 class="project-sub-title">mock landing page for ecommerce site</h3>
+            <p class="project-desc">I collaborated with a software developer to create a mock landing page for an ecommerce site.
+              I was in charge of branding and character development.</p>
+            <div class="buttons">
+              <!-- <a href="#" class="primary-btn-1">More Info</a> -->
+              <a href="https://github.com/VGMichel/poppi-landing-spw" class="primary-btn outline external-link"> <span>View Live</span>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <div class="container">
+      <h2 class="section-heading">About</h2>
+      <div class="wrapper">
+        <div class="left">
+          <!-- <div class="card">
+            <div class="img">
+              <img src="images/avatar.jpg" alt="">
+            </div> -->
+            <!-- <p class="card-desc">I’m a multidisciplinary designer and developer based in Bangladesh. I love the Web platform
+              and I need to improve it for
+              everybody. What's more, I believe myself to be totally honored that I will assemble it professionally.</p>
+            <h3 class="card-name">gaelle</h3>
+            <p class="card-sub-title">xxxxx</p> -->
+          </div>
+        </div>
+        <div class="right">
+          <p class="right-text"> I'm Gaelle - an emerging designer and front-end web developer based out of Florida.
+            From my background in healthcare to lines of code on a web page, 
+            I love combining the worlds of logic and creative design to make eye-catching, accessible, 
+            and user-friendly websites and applications.
+          </p>
+          <!-- <div class="buttons">
+            <a href="./resume.txt" class="primary-btn-1" download="">Download Resume</a>
+            <a href="./contact.html" class="primary-btn outline">Contact</a>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- services Section -->
+  <!-- <section id="services">
+    <div class="container">
+      <h2 class="section-heading">Services</h2>
+      <div class="all-items">
+        <div class="item">
+          <div class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
+                d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+            </svg>
+          </div>
+          <h3 class="item-heading">Web Design</h3>
+          <p class="item-desc">I build up the high performance website with blazing fast speed. Website with high
+            performance can lead the visitor more. </p>
+        </div>
+        <div class="item">
+          <div class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
+                d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+            </svg>
+          </div>
+          <h3 class="item-heading">UI/UX</h3>
+          <p class="item-desc">I do ui/ux design for the website that assists website to get an outstanding look. Unique
+            design creates an unique personality for websites.</p>
+        </div>
+        <div class="item">
+          <div class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
+                d="M10 21h7a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v11m0 5l4.879-4.879m0 0a3 3 0 104.243-4.242 3 3 0 00-4.243 4.242z" />
+            </svg>
+          </div>
+          <h3 class="item-heading">SEO</h3>
+          <p class="item-desc">With SEO, your business wants to increase its visibility in search results on search
+            engines. I also provide SEO services
+            to rank your website.</p>
+        </div>
+      </div>
+    </div>
+  </section> -->
 
 
-  <div class="project-2">
-  <img src="images/poppi-card.png" alt="POPPI anime makeup brand card.">
-    <div class="project-overlay-2">
-      <div class="overlay-text">
-        <h2>POPPI</h2>
-        <p>A landing page mockup for ecommerce site with branding assets.</p>
-        <a href="https://vgmichel.github.io/poppi-landing-spw/index.html" target="_blank " class="button-2"><i class="fa-solid fa-link"></i></i></a>
-        <a href="https://github.com/VGMichel/poppi-landing-spw" target="_blank " class="button-2"><i class="fa-brands fa-github"></i></a>
+
+ <!-- Contect Form -->
+ <section id="contact">
+  <div class="container">
+    <h2 class="section-heading" data-outline="contact">Contact</h2>
+    <div class="wrapper">
+      <div class="left">
+        <h2 class="contact-heading">Let's Chat!</h2>
+        <p class="contact-desc">Feel free to connect with me via email, LinkedIn or send me a message.
+<br><br>
+I look forward to hearing from you.</p>
+        <div class="social-info">
+          <ul>
+            <li><a href="mailto:gsmichel0@gmail.com" target="_blank">
+              <i class="fa-solid fa-envelope"></i>
+              </a></li>
+            <li><a href="https://github.com/mchldsgn" target="_blank">
+              <i class="fa-brands fa-github"></i>
+              </a></li>
+            <li><a href="https://www.linkedin.com/in/gsmichel/" target="_blank">
+              <i class="fa-brands fa-linkedin-in"></i>
+              </a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="right">
+        <div class="form-wrapper">
+          <form action="https://formsubmit.co/gsmichel0@gmail.com" method="post" class="contact-content" autocomplete="off" target="_blank">
+            <input type="hidden" name="_subject" value="New submission from mchldsgn!">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <div class="input-wrapper">
+                
+                <input type="text" id="name" name="name">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Your Email</label>
+              <div class="input-wrapper">
+                
+                <input type="text" id="email" name="email">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+
+              <textarea type="text" id="message" name="message" width="100%"></textarea>
+
+            </div>
+            <button type="submit">Send</button>
+          </form>
+        </div>
       </div>
     </div>
   </div>
-
-  <div class="project-3">
-  <img src="images/moodish-card.png" alt="moodish music sharing app card.">
-    <div class="project-overlay-3">
-      <div class="overlay-text-3">
-        <h2>moodish</h2>
-        <p>A social music app/music sharing app that gives users the ability to connect with one another, while discovering new music and/or artists.</p>
-        <a href="https://www.figma.com/proto/34P4vG3BKTErtu8g5UJH7B/MOODISH?node-id=406%3A1579&scaling=scale-down&page-id=406%3A1577&starting-point-node-id=406%3A1579" target="_blank " class="button-3"><i class="fa-brands fa-figma"></i></a>
-        <a href="https://open.spotify.com/playlist/3pB5AXmF3rm51vJ80UMO6M?si=9460814dd1dc4d79" target="_blank " class="button-3"><i class="fa-solid fa-headphones"></i></a>
-      </div>
-    </div>
-  </div>
-</div>
+</section>
 
 
-<!-- <div class="skills">
-  <h3>Le Skills</h3>
-  <ul>
-    <li>UI / UX</li>
-    <li>Front End Development</li>
-    <li>HTML</li>
-    <li>CSS</li>
-    <li>JavaScript</li>
-    <li>GitHub</li>
-    <li>API's</li>
-    <li>React</li>
-    <li>Adbobe Creative Suite</li>
-    <li>figma</li>
-  </ul>
-</div> -->
-
-<!--ABOUT --> 
-
-<!-- <div class="about" id="about-section">
-  <div class="about-info">
-  Hey there<br> Thanks for scrolling this far! 🤗
-  I'm formly a health
-Other than coding, I spend most of my free time reading, playing compter games 🤓 and being a dog mom.
-  </div>
-</div>  -->
-
-<!--CONTACT -->
-<div class="contact" id="contact-section">
-    <div class="contact-content">
-      <h1>Let's Chat!</h1><br>
-      <p>You can connect with me below via email, LinkedIn or send me a message below.</p>
-    </div>
-    <span id="socials">
-      <a href="mailto:gsmichel0@gmail.com" target="_blank">
-      <i class="fa-solid fa-envelope"></i></a>
-  
-      <a href="https://github.com/mchldsgn" target="_blank">
-      <i class="fa-brands fa-github"></i></a>
-  
-      <a href="https://www.linkedin.com/in/gsmichel/" target="_blank">
-      <i class="fa-brands fa-linkedin-in"></i></a>
-    </span>
-  <div class="contact-form">
-    <form action="https://formsubmit.co/gsmichel0@gmail.com" method="post" class="contact-content" autocomplete="off" target="_blank">
-    <input type="hidden" name="_subject" value="New submission from mchldsgn!">
-    <input type="text" id="name" name="name" placeholder="name" required>
-    <input type="email" name="email" placeholder="e-mail" required>
-    <input type="hidden" name="_next" value="https://mchldsgn.github.io/mchldsgn/thanks.html">
-    <textarea name="subject" placeholder="message" cols="30" rows="10" required></textarea>
-    <input type="submit" value="SEND"> 
-    </form>
-  </div>
-</div>
-
-  <!-- FOOTER -->
+    <!-- FOOTER -->
 <div class="footer">
-    <p><img src="images/virgo-icon.png" alt="virgo icon" style="width:16px;height:16px;""><br> designed and developed by <a href="https://www.linkedin.com/in/gsmichel/" target="_blank">gaelle</a></p>
+  <p><img src="images/virgo-icon.png" alt="virgo icon" style="width:16px;height:16px;""><br> designed and developed by <a href="https://www.linkedin.com/in/gsmichel/" target="_blank">gaelle</a></p>
 </div>
 
-  </body>
-</html>
-<script type="text/javascript"
-src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script type="text/javascript" src="main.js"></script>
+  <script src="index.js"></script>
+  <script src="https://kit.fontawesome.com/09d0ae3c01.js" crossorigin="anonymous"></script>
 
-<script src="https://kit.fontawesome.com/09d0ae3c01.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
