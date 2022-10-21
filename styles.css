@@ -99,7 +99,7 @@ p {
 }
 .primary-btn-1 {
 	display: inline-block;
-	background-color: #f6eefd;
+	background-color: #f2e3ff;
 	color: #cd8de9;
     border: solid 2px;
 	font-weight: 700;
@@ -111,7 +111,7 @@ p {
 .primary-btn-1:hover {
     font-weight: 700;
     background-color: #af6eca;
-	color: #f6eefd;
+	color: #f2e3ff;
 	border: solid #af6eca 2px;
 	transition: 0.5s;
 }
