@@ -79,14 +79,15 @@ p {
 	top: -20%;
 	width: 100%;
 
+	
 	text-align: center;
 	text-transform: uppercase;
 	font-family: 'nunito';
 	letter-spacing: 0.2rem;
-
 	color: transparent;
-	/* -webkit-text-stroke: 1.5px rgba(0, 0, 0, 0.103); */
-	-webkit-text-stroke: 1.5px #222222a6;
+
+	/* -webkit-text-stroke: 1.5px rgba(54, 54, 54, 0.692);
+	-webkit-text-stroke: 1.5px #1f1f1f34; */
 	z-index: -1;
 }
 .buttons {
@@ -109,29 +110,44 @@ p {
 
 .primary-btn-1:hover {
     font-weight: 700;
-    background-color: #d29de7;
+    background-color: #af6eca;
 	color: #f6eefd;
 	border: solid #af6eca 2px;
 	transition: 0.5s;
-
 }
 
 .primary-btn-2 {
 	display: inline-block;
 	background-color: #fae0eb;
-	color: #ed5497;
+	color: #fc6aa9;
     border: solid 2px;
 	font-weight: 700;
 	font-size: 1.8rem;
 	padding: 0.6em 1.6em;
 	border-radius: 50px;
 }
-
 .primary-btn-2:hover {
     font-weight: 700;
-    background-color: #f17ab8;
+    background-color: #fc6aa9;
 	color: #fae0eb;
-    border: solid 2px #e51872;
+    border: solid 2px #fc6aa9;
+	transition: 0.5s;
+}
+.primary-btn-3 {
+	display: inline-block;
+	background-color: #d9f1ff;
+	color: #82cffc;
+    border: solid 2px;
+	font-weight: 700;
+	font-size: 1.8rem;
+	padding: 0.6em 1.6em;
+	border-radius: 50px;
+}
+.primary-btn-3:hover {
+    font-weight: 700;
+    background-color: #82cffc;
+	color: #d9f1ff;
+    border: solid 2px #82cffc;
 	transition: 0.5s;
 }
 .buttons .primary-btn.outline {
