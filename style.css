@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;1000&display=swap" rel="stylesheet');
+
+/* variables */
+:root {
+	--primary-color: #232323;
+	--secondary-black: #303030;
+	--secondary-gray: #48464b;
+	--body-bg: #ffffff;
+}
+
+/* global styles */
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	cursor: url(images/cursor24.png), pointer;
+}
+html {
+	font-family: 'nunito';
+	font-size: 10px;
+	scroll-behavior: smooth;
+}
+body {
+	background-color: var(--body-bg);
+}
+a, a:link, a:visited, a:hover {
+    cursor: url(images/handcursor.png), pointer;
+	text-decoration: none;
+}
+::-webkit-scrollbar {
+    width: 20px;
+}
+    
+::-webkit-scrollbar {
+    background: none !important;
+}
+    
+::-webkit-scrollbar-thumb {
+    background-color:#1f1f1f;
+    border: 6px solid transparent;
+    border-radius: 10px;
+    background-clip: content-box;
+}
+
+.section-heading {
+	font-size: clamp(2rem, 10vw, 8rem);
+    font-weight: 900;
+	color: #fcfcfc;
+	text-transform: uppercase;
+	font-family: 'nunito';
+	letter-spacing: 0.2rem;
+	text-align: center;
+	position: relative;
+	margin-bottom: 5rem;
+}
+.section-heading-1 {
+	font-size: clamp(2rem, 10vw, 8rem);
+    font-weight: 900;
+	color: #cd8de9;
+	text-transform: uppercase;
+	font-family: 'nunito';
+	letter-spacing: 0.2rem;
+	text-align: center;
+	position: relative;
+	margin-bottom: 5rem;
+}
+.section-heading-2 {
+	font-size: clamp(2rem, 10vw, 8rem);
+    font-weight: 900;
+	color: #fc6aa9;
+	text-transform: uppercase;
+	font-family: 'nunito';
+	letter-spacing: 0.2rem;
+	text-align: center;
+	position: relative;
+	margin-bottom: 5rem;
+}
+.section-heading-3 {
+	font-size: clamp(2rem, 10vw, 8rem);
+    font-weight: 900;
+	color: #82cffc;
+	text-transform: uppercase;
+	font-family: 'nunito';
+	letter-spacing: 0.2rem;
+	text-align: center;
+	position: relative;
+	margin-bottom: 5rem;
+}
+.section-heading::before {
+	/* content: attr(data-outline); */
+	position: absolute;
+	left: 2%;
+	top: -20%;
+	width: 100%;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: 'nunito';
+	letter-spacing: 0.2rem;
+	color: transparent;
+	z-index: -1;
+}
+/* scroll Top/Up Button */
+.scroll-top {
+	z-index: 100;
+	height: 40px;
+	width: 40px;
+	color: #ffffff;
+	background-color: #232323;
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	border-radius: 10px;
+	box-shadow: 0px 0px 10px rgba(22, 22, 22, 0.226);
+	/* hover effect default */
+	transform: scale(0.9);
+	transition: 0.3s ease-in-out transform;
+	/* for centering the icon */
+	/* display: flex; */
+	display: none;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	font-weight: 900;
+    font-size: 1.5rem;
+}
+
+.scroll-top:hover {
+	color:#FF007A ;
+	transform: scale(1);
+	font-weight: 900;
+    font-size: 1.5rem;
+}
+
+/* Navigation Section */
+#navigation {
+	position: fixed;
+	right: 50px;
+	height: auto;
+	top: 20px;
+	z-index: 100;
+}
+#navigation .nav-icon {
+	width: 50px;
+	height: 50px;
+    border-radius: 10px;
+	margin: 0 auto;
+	margin-right: 0;
+	background-color: var(--primary-color);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#navigation .nav-icon svg {
+	width: 80%;
+	color: white;
+}
+#nav-content {
+	position: fixed;
+	right: 0;
+	width: 80%;
+	max-width: 800px;
+	height: 100%;
+	z-index: 100;
+	background-color: var(--secondary-black);
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+	transform: translateX(100%);
+	transition: 0.3s ease transform;
+}
+#nav-content.show {
+	background-color: var(--secondary-black);
+	transform: translateX(0);
+	box-shadow: -6px 0px 29px 7px #3030308e;
+}
+#nav-content .section-heading {
+	text-align: left;
+}
+#nav-content .section-heading::before {
+	content: 'Menu';
+	text-align: left;
+	-webkit-text-stroke: 1.5px #d8d8d8;
+}
+#nav-content .wrapper {
+	width: 70%;
+	position: relative;
+}
+#nav-content ul {
+	list-style: none;
+	text-align: left;
+}
+#nav-content ul li {
+	margin-bottom: 2rem;
+}
+#nav-content ul li:hover {
+	list-style: none;
+	text-align: left;
+	font-weight: 900;
+}
+#nav-content ul li a {
+	display: inline-block;
+	width: 100%;
+	color: white;
+	font-size: 5rem;
+	font-family: 'nunito';
+	/* position: relative; */
+}
+#nav-content ul li a::after {
+	content: attr(data-text);
+	pointer-events: none;
+	position: absolute;
+	right: -150px;
+	bottom: 30%;
+	width: 100%;
+	color: transparent;
+	-webkit-text-stroke: 1.5px #d8d8d8;
+	opacity: 0;
+	transition: 0.3s ease;
+	transition-property: opacity, transform;
+	z-index: -1;
+	text-align: center;
+	transform: rotate(90deg) scale(2);
+}
+#nav-content ul li a:hover::after {
+	opacity: 1;
+	transform: scale(2) translateY(10px) rotate(90deg);
+}
+#nav-content .close-btn {
+	position: absolute;
+	left: 10px;
+	top: 10px;
+	color: white;
+	width: 40px;
+	height: 40px;
+	background-color: var(--primary-color);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	transition: 0.3s ease background-color;
+}
+#nav-content .close-btn:hover {
+	background-color: #FF007A;
+}
+#nav-content .close-btn svg {
+	width: 80%;
+}
+@media only screen and (max-width: 768px) {
+	#navigation {
+		right: 10px;
+		top: 10px;
+	}
+	#nav-content nav ul li a::after {
+		display: none;
+	}
+	#nav-content .section-heading {
+		text-align: right;
+		margin-bottom: 5rem;
+	}
+	#nav-content .section-heading::before {
+		text-align: right;
+	}
+	#nav-content nav ul {
+		text-align: right;
+	}
+	#nav-content nav ul li a {
+		font-size: 2.5rem;
+	}
+	#nav-content .wrapper {
+		width: 90%;
+	}
+}
+.gt-info {
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+  	width: 75%;
+	padding-top: 70px ;
+}
+
+.gt-info img {
+	display: flex;
+	justify-content: center;
+	align-items: center;	
+	width: 75vw;
+	border: 3px solid #FF007A;
+		
+}
+
+	/* Footer Section */
+
+.footer {
+    display: flex;
+    margin: 10px 50px 20px;
+	padding-top: 10px;
+    align-items: center;
+    text-align: center;
+    font-size: 2rem;
+    justify-content: center;
+}
+
+.footer p {
+	font-size: 1.5rem;
+}
+
+.footer a:hover {
+    color: #FF007A;
+	font-weight: 700;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+}

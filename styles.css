@@ -319,7 +319,6 @@ p {
 	color: white;
 	font-size: 5rem;
 	font-family: 'nunito';
-	/* position: relative; */
 }
 #nav-content ul li a::after {
 	content: attr(data-text);
