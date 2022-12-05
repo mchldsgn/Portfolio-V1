@@ -953,7 +953,7 @@ p {
 
 .footer {
     display: flex;
-    margin: 10px 50px 20px;
+    margin: 10px;
     align-items: center;
     text-align: center;
     font-size: 2rem;
